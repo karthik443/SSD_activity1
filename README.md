@@ -1,5 +1,5 @@
 # SSD_activity1
-ssd activity 1 aboud sql cursors and stored procedures. 
+ssd activity 1 about sql cursors and stored procedures. 
 
 gihub repo link : https://github.com/karthik443/SSD_activity1
 
@@ -35,7 +35,9 @@ Q1 --------------------------------------------->
         1. used a cursor to traverse all rows in the table. 
         2. stored each name in a temp table.
         3. printed that temp table after traversing all rows.
+
     command to execute : 
+
         call ListAllSubscribers()
 
 
@@ -49,7 +51,9 @@ Q2 --------------------------------------------->
         2. using watchhistory I mapped the showname, subscriber name, subscriber id, watch time using abouve joins.
         3. At the end I used where clause to filter out the required subscriber id detail.
         3. printed the result.
+
     command to execute : 
+
         call GetWatchHistoryBySubscriber(1);
 
 Q3 --------------------------------------------->    
@@ -61,6 +65,7 @@ Q3 --------------------------------------------->
         3. inserted newId , subName , curr_date() as new tuple into table;
         
     command to execute : 
+
         call AddSubscriberIfNotExists('Rakesh');
 
 Q4 --------------------------------------------->    
@@ -72,6 +77,7 @@ Q4 --------------------------------------------->
         3. after iterating through all subscribers I ended the loop.
         
     command to execute : 
+
         call SendWatchTimeReport()
 
 Q5 --------------------------------------------->   
@@ -83,4 +89,5 @@ Q5 --------------------------------------------->
         3. If a persons's watchhistory doesn't exsit it will print subscriber name and shows null in watchtime , showTitle column.
         
     command to execute : 
+
          call  SendWatchTimeReport2()
