@@ -1,6 +1,8 @@
 # SSD_activity1
 ssd activity 1 aboud sql cursors and stored procedures. 
 
+gihub repo link : https://github.com/karthik443/SSD_activity1
+
 prerequisite:
              We need to have three tables with schema definition below to Use/execute these procedures. And recommended to        prepopulate some data inside these tables
 
@@ -26,7 +28,7 @@ prerequisite:
             Subscribers(SubscriberID)
         );
 
-gihub repo link : 
+
 Q1 --------------------------------------------->    
     problem statement : Print names of all subscribers present. 
     Process : 
