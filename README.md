@@ -4,7 +4,7 @@ ssd activity 1 about sql cursors and stored procedures.
 gihub repo link : https://github.com/karthik443/SSD_activity1
 
 prerequisite:
-             We need to have three tables with schema definition below to Use/execute these procedures. And recommended to        prepopulate some data inside these tables
+             We need to have three tables with schema definition below to Use/execute these procedures. And recommended to        prepopulate some data inside these tables (provided at bottom)
 
       
     1.  CREATE TABLE Shows (
@@ -91,3 +91,31 @@ Q5 --------------------------------------------->
     command to execute : 
 
          call  SendWatchTimeReport2()
+
+
+
+
+----------------------------------------------------------------------------------------
+
+-- Insert Sample Data
+
+INSERT INTO Shows (ShowID, Title, Genre, ReleaseYear) VALUES
+(1, 'Stranger Things', 'Sci-Fi', 2016),
+(2, 'The Crown', 'Drama', 2016),
+(3, 'The Witcher', 'Fantasy', 2019);
+
+INSERT INTO Subscribers (SubscriberID, SubscriberName,
+SubscriptionDate) VALUES
+(1, 'Emily Clark', '2023-01-10'),
+(2, 'Chris Adams', '2023-02-15'),
+(3, 'Jordan Smith', '2023-03-05');
+
+INSERT INTO WatchHistory (HistoryID, SubscriberID, ShowID,
+WatchTime) VALUES
+(1, 1, 1, 100),
+(2, 1, 2, 10),
+(3, 2, 1, 20),
+(4, 2, 2, 40),
+(5, 2, 3, 10),
+(6, 3, 2, 10),
+(7, 3, 1, 10);
